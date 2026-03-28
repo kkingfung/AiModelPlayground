@@ -1,0 +1,31 @@
+# Experiment 08: Reinforcement Learning for Game AI
+
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# RL Libraries
+gymnasium>=0.29.0              # Updated OpenAI Gym
+stable-baselines3>=2.1.0       # Reference implementations
+gym[atari,box2d]>=0.26.0       # Classic RL environments
+
+# Visualization & Monitoring
+tensorboard>=2.14.0            # Training visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pygame>=2.5.0                  # Game environments
+
+# Utilities
+tqdm>=4.65.0
+pandas>=2.0.0
+imageio>=2.31.0                # Save videos
+imageio-ffmpeg>=0.4.9          # Video encoding
+
+# Optional: Advanced RL
+ray[rllib]>=2.7.0              # Distributed RL (optional)
+# unity-ml-agents>=0.30.0      # Unity integration (optional)
+
+# Development
+jupyter>=1.0.0
+ipywidgets>=8.1.0

@@ -1,0 +1,16 @@
+# Custom Neural Architectures - Requirements
+
+# Core
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# ONNX Export
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Optional: For advanced profiling
+# tensorboard>=2.13.0

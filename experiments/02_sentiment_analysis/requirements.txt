@@ -1,0 +1,13 @@
+# Advanced Game Review Sentiment Analysis - Requirements
+
+# Core
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+
+# NLP
+sentencepiece>=0.1.99
+tokenizers>=0.13.3
+
+# Utilities
+tqdm>=4.65.0

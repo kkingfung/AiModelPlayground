@@ -1,0 +1,1 @@
+Combat UI showing health bars, action buttons (Attack, Defend, Special), and turn indicator

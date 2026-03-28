@@ -1,0 +1,1 @@
+Inventory screen with 6x4 grid layout, item icons and quantities

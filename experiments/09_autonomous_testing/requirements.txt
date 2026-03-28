@@ -1,0 +1,18 @@
+# Autonomous Game Testing - Requirements
+
+# Core
+numpy>=1.24.0
+
+# Networking (for Unity bridge)
+# (built-in: socket, json)
+
+# Visualization (optional - for coverage heatmaps and state graphs)
+matplotlib>=3.7.0
+networkx>=3.0
+
+# External integrations (optional)
+requests>=2.31.0  # For Slack webhooks
+jira>=3.5.0  # For JIRA integration
+
+# Development
+pytest>=7.4.0

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__shaderop-unity-project__list_allowed_directories",
+      "mcp__shaderop-unity-project__list_directory",
+      "mcp__shaderop-unity-project__directory_tree",
+      "mcp__shaderop-unity-project__read_text_file",
+      "mcp__shaderop-unity-project__search_files"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

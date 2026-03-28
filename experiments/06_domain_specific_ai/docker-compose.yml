@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  gamedev-ai:
+    build: .
+    container_name: gamedev-ai-assistant
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist vector store
+      - ./vector_store_web:/app/vector_store_web
+      # Persist uploads
+      - ./uploads:/app/uploads
+      # Mount your game docs (optional)
+      - ./game_docs:/app/game_docs:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# Optional: Add Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: gamedev-ai-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - gamedev-ai
+    restart: unless-stopped
+
+volumes:
+  vector_store:
+  uploads:

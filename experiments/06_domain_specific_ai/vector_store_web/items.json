@@ -1,0 +1,38 @@
+[
+  {
+    "type": "text",
+    "content": "# Combat System\n\n## UI Layout\n\nThe combat UI consists of:\n- Health bars at the top\n- Action buttons at the bottom (Attack, Defend, Special)\n- Turn indicator on the right\n- Character portraits on the left\n\nSee combat_ui.png for reference.\n\n## Combat Flow\n\n1. Player selects action\n2. Animation plays\n3. Damage calculation\n4. Enemy turn\n5. Repeat until victory/defeat\n",
+    "metadata": {
+      "source": "sample_docs_test\\combat_system.md",
+      "chunk_id": 0,
+      "type": "document"
+    }
+  },
+  {
+    "type": "text",
+    "content": "Combat UI showing health bars, action buttons (Attack, Defend, Special), and turn indicator",
+    "metadata": {
+      "source": "sample_docs_test\\images\\combat_ui.txt",
+      "chunk_id": 0,
+      "type": "document"
+    }
+  },
+  {
+    "type": "text",
+    "content": "Inventory screen with 6x4 grid layout, item icons and quantities",
+    "metadata": {
+      "source": "sample_docs_test\\images\\inventory_grid.txt",
+      "chunk_id": 0,
+      "type": "document"
+    }
+  },
+  {
+    "type": "text",
+    "content": "Combat state machine diagram: Idle -> PlayerTurn -> EnemyTurn -> Victory/Defeat",
+    "metadata": {
+      "source": "sample_docs_test\\images\\state_machine_diagram.txt",
+      "chunk_id": 0,
+      "type": "document"
+    }
+  }
+]
